@@ -38,13 +38,13 @@ const App = () => {
       )
     )
   }
-  const AddTask = (task) => {
+  const addTask = (task) => {
     console.log(task)
   }
   return (
     <div className="container">
       <Header />
-      <AddTask onAdd={AddTask} />
+      <AddTask onAdd={addTask} />
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} /> : 'To Task To Show'}
     </div>
   );
